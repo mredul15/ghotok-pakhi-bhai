@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ঘটক পাখি ভাই মহিলা - নাহিলা আপু</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav>
+        <div class="logo">ঘটক পাখি ভাই নাহিলা </div>
+    </nav>
+
+    <!-- নাহিলা আপুর ইন্টারঅ্যাক্টিভ সেকশন -->
+    <main class="chat-container">
+    <div class="nahila-profile">
+        <img src="nahila.jpg" alt="নাহিলা আপু" class="nahila-avatar-img">
+        <h2>নাহিলা আপু (প্রধান ঘটক)</h2>
+        <p class="status">● অনলাইনে আছেন</p>
+    </div>
+
+        <div class="chat-box" id="chatBox">
+            <!-- প্রথম প্রশ্ন স্বয়ংক্রিয়ভাবে এখানে আসবে -->
+            <div class="message nahila-msg">
+                <p>আসসালামু আলাইকুম আপু, আমি <strong>নাহিলা</strong>। আপনার মনের মতো জীবনসঙ্গী খুঁজে দেওয়ার দায়িত্ব আমার। প্রথমে বলুন, <strong>আপনি কেমন পাত্র চান?</strong></p>
+            </div>
+        </div>
+
+        <!-- ইনপুট ও ড্রপ-ডাউন এরিয়া -->
+        <div class="input-area" id="inputArea">
+            <select id="currentDropdown">
+                <option value="">একটি অপশন বেছে নিন...</option>
+                <option value="দ্বীনি/পরহেজগার">দ্বীনি ও পরহেজগার পাত্র</option>
+                <option value="চাকরিজীবী/ব্যবসায়ী">প্রতিষ্ঠিত চাকরিজীবী বা ব্যবসায়ী</option>
+                <option value="উচ্চশিক্ষিত/প্রবাসী">উচ্চশিক্ষিত বা প্রবাসী পাত্র</option>
+            </select>
+            <button onclick="nextQuestion()">পরবর্তী ধাপ ➔</button>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
